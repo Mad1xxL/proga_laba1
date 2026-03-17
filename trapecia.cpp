@@ -3,34 +3,34 @@ using namespace std;
 
 int main(){
 
-    double nizOsn;
+    double nOsn;
     cout << "Введите нижнее основание трапеции: ";
-    cin >> nizOsn;
+    cin >> nOsn;
 
-    double levStrn;
+    double lStrn;
     cout << "Введите левую сторону трапеции: ";
-    cin >> levStrn;
+    cin >> lStrn;
 
-    double verhOsn;
+    double vOsn;
     cout << "Введите верхнее основание трапеции: ";
-    cin >> verhOsn;
+    cin >> vOsn;
 
-    double pravStrn;
+    double pStrn;
     cout << "Введите правую сторону трапеции: ";
-    cin >> pravStrn;
+    cin >> pStrn;
     
     double visota;
     cout << "Введите высоту трапеции: ";
     cin >> visota;
 
-    if (nizOsn <= 0 || levStrn <= 0 || verhOsn <= 0 || pravStrn <= 0 || visota <= 0){
+    if (nOsn <= 0 || lStrn <= 0 || vOsn <= 0 || pStrn <= 0 || visota <= 0){
         cout << "Некорректные переменные, введите новые!";
         return 0;
     }
 
     else{
-        double perimetr = nizOsn + levStrn + verhOsn + pravStrn;
-        double srLiniya = (nizOsn + verhOsn)/2;
+        double perimetr = nOsn + lStrn + vOsn + pStrn;
+        double srLiniya = (nOsn + vOsn)/2;
         double ploshad = srLiniya * visota;
 
         cout << "Периметр равен: " << perimetr << endl;
