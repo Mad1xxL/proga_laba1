@@ -37,7 +37,7 @@ int main(){
     }
 
     if (visota >= lStrn || visota >= pStrn) {
-    cout << "Некорректные переменные, введите новые!" << endl;
+    cout << "Некорректные переменные, введите новые! " << endl;
     return 0;  
     }
 
