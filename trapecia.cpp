@@ -24,8 +24,21 @@ int main(){
     cin >> visota;
 
     if (nOsn <= 0 || lStrn <= 0 || vOsn <= 0 || pStrn <= 0 || visota <= 0){
-        cout << "Некорректные переменные, введите новые!";
+        cout << "Некорректные переменные, введите новые!" << endl;
         return 0;
+    }
+
+    if (nOsn >= lStrn + vOsn + pStrn ||
+    lStrn >= nOsn + vOsn + pStrn ||
+    vOsn >= nOsn + lStrn + pStrn ||
+    pStrn >= nOsn + lStrn + vOsn) {
+    cout << "Некорректные переменные, введите новые!" << endl;
+    return 0;
+    }
+
+    if (visota >= lStrn || visota >= pStrn) {
+    cout << "Некорректные переменные, введите новые!" << endl;
+    return 0;  
     }
 
     else{
